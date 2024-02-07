@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raffhan-Portfolio</title>
+    <link rel="icon" href="images/web-icon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=erode@700,300,500,600,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=tanker@400&f[]=pally@400&f[]=ranade@300,100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://api.fontshare.com/v2/css?f[]=comico@400&f[]=kola@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5825825c24.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <nav>
+        <div class="left">
+          <img
+          src="images/logo.png"
+          alt="Raffhan-Portfolio"
+          class="logo"
+        />
+        
+        </div>
+        <div class="right">
+        <ul class="nav-sidemenu" id="sidemenu">
+          <li><a  href="#header">Home</a></li>
+          <li ><a  href="#about">About</a></li>
+          <li ><a  href="#experience">Experience</a></li>
+          <li > <a  href="#services">Works</a></li>
+          <li > <a  href="#certificates">Certificates</a></li>
+          <li ><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"> </i>
+      </div>
+      
+      </nav>
+      <div class="container">
+        
+        <div class="header-text">
+          <p><span id="logo-title">Developer...</span><i class="fa-solid fa-code" style="color: #2599e7;"></i></p>
+          <h1>
+            Hi, This is <span id="logo-title">Raffhan Khan</span>
+            <br />
+            from Hyderabad.
+          </h1>
+          <!-- <a href="#" class="btn btn3">Get Resume</a> -->
+        </div>
+      </div>
+    </div>
+    <!---------------------------------about------------------------- -->
+
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="images/photo_2023-09-21_22-00-29.jpg" alt="" />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Software Developer with Backend Development Experience in Java,
+              Spring Boot, Microservices, RESTful APIs, Agile Methodology, Cloud
+              Platforms, AWS, Azure , SQL, Python, HTML, CSS, Git, Software
+              Coding, Software Development.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-tab-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <!-- ----------SKILLS--------- -->
+            <div class="tab-contents active-tab-contents" id="skills">
+              <ul>
+                <li><span>Languages</span><br />C, Java, Python</li>
+                <li>
+                  <span>Frameworks</span><br />Spring boot, Spring Framework,
+                  Bootstrap, Angular, HTML, CSS, Rest API”S, Microservices.
+                </li>
+                <li><span>Database</span><br />Oracle , PostgreSQL, MySQL</li>
+                <li>
+                  <span>Tools</span><br />Eclipse, IntelliJ, Spring tool suite
+                  (STS) , VS code, PyCharm, Postman, SOAP UI, Swagger UI.
+                </li>
+                <li>
+                  <span>knowledge on</span><br />Angular, Docker, Kubernetes
+                </li>
+                <li>
+                  <span>Others</span><br />JSON, JUnits, Maven, putty, Jenkins,
+                  Sonar, Server, RESTful APIs, Hibernate, Git, Scrum, Sprint,
+                  SDLC, AWS etc.
+                </li>
+              </ul>
+            </div>
+            <!-- -------------Education-------------- -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>MVGR College of Engineering</span><br />BTech
+                  Specialized in Computer science and Engineering<br />
+                  CGPA 7.46/10 (2017 -2021)
+                </li>
+                <li>
+                  <span>Narayana Junior College</span><br />PCM (Physics,
+                  Chemistry and Mathametics)<br />95.4% (2015 - 2017)
+                </li>
+                <li>
+                  <span>Saint Marys English medium high School</span
+                  ><br />Tenth<br />CGPA 9.3/10 (2015)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- ----------------------------Experience------------------------- -->
+    <div class="experience" id="experience">
+      <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="experience-list">
+          <div>
+            <div class="disignation">
+              <div class="orglogo"><img src="images/Tata_Consultancy_Services_Logo.png" alt=""></div>
+              <div class="role"><span><h2>Backend Developer</h2></span></div>
+            <div class="duration"><h4>2021, July - Present</h4>
+            </div>
+            </div>
+            <p>
+              <ul>
+              <li>Collaborated as a key member of an agile squad, contributing to
+              the development and enhancement of cutting-edge applications using
+              Spring Boot framework.</li>
+              <li>Successfully spearheaded the migration of portal authentication, transitioning from SiteMinder to Microsoft Authentication, ensuring seamless
+                access and enhanced security for users.</li>
+              <li>Led the migration of user data to Azure, leveraging Microsoft Graph APIs, resulting in improved data management, access control, and
+                  security protocols.</li>
+              <li>Designed and developed scalable applications using the Springboot framework, implementing best coding practices and industry standards.
+                Leveraged Oracle Database for robust authorization and Microsoft Azure Graph API for secure authentication, resulting in a highly secure and
+                reliable system. Utilized WebLogic servers for deploying war files and Implemented ECR to store, manage, and deploy Docker container
+                images AWS EKS for containerized deployments ensuring efficient application delivery and scalability.</li> 
+              <li>Designed and implemented role-based access control (RBAC) systems with 7 user types, defining and assigning roles and responsibilities to
+                users, streamlining access permissions and ensuring data security.</li>
+              <li>Implemented an integration with Experian to automate user approval processes, drastically reducing manual intervention. This automation
+                included processes for approval, rejection, and escalation to manual approval by administrators when necessary, significantly reducing
+                administrative workload.</li>
+              <li>Successfully integrated third-party APIs
+              and services to extend the functionality of applications,
+              streamlining overall user experience.</li><li> During my tenure, I
+              seamlessly integrated third-party APIs, effectively utilizing
+              RESTful API calls and HTTP clients to enhance application
+              functionality and streamline data exchange with external services
+              and build docker images and deployed in AWS EKS (Elastic
+              Kubernetes Service). </li><li>Proficient in developing RESTful APIs,
+              microservices, and server-side components using Spring Boot,
+              framework, Hibernate, and relational databases such as Oracle SQL
+              and PostgreSQL. Skilled in Java programming, version control with
+              Git, and build automation using Maven.</li> <li>Worked closely with
+              cross-functional teams, including continuous integration and
+              delivery (CI/CD), UX/UI designers, QA engineers, product owners,
+              and cloud platforms such as AWS and Azure to deliver high-quality
+              products within tight deadlines.</li> <li>Developed and executed an
+              automated migration script, seamlessly transferring 1000+ users
+              from a green-side server to TransFlex reduced manual effort by
+              80%.</li> <li>Conducted thorough code reviews, offering actionable
+              suggestions and promoting best practices to optimize code quality,
+              leading to a 30% improvement in application performance and a 25%
+              reduction in bug resolution time.</li></ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-list" id="awards">
+            <div class="award"><img src="images/awardsvg.png" alt="awards" class="award-logo">
+              Star of the Release</div>
+            <div class="award"><img src="images/awardsvg.png" alt="awards" class="award-logo">
+              On the Spot Award</div>
+        </div>
+      </div>
+    </div>
+
+     <!-- ----------------------------Services------------------------------ -->
+    <div class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code fa-flip"></i>
+            <h2>Backend Development</h2>
+            <p>I specialize in developing custom backend solutions tailored to your specific needs. 
+              Whether you're building a web application, RESTful APIs, or microservices, 
+              I can design and implement the backend architecture to ensure optimal performance, scalability, and security.
+              I follow industry best practices for testing, including unit testing, integration testing, and end-to-end testing, 
+              to ensure the reliability and stability of your backend services with Loosely coupled.
+
+            </p>
+            <!-- <a href="">Learn more</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-wand-magic-sparkles fa-flip"></i>
+            <h2>Poster Design</h2>
+            
+            <p>Create eye-catching posters that leave a lasting impression. 
+              I specialize in custom poster design tailored to your unique needs.
+            <br />
+              What I Offer:
+              <ul>
+              <li>Creative concept development</li>
+              <li>High-quality graphics and imagery</li>
+              <li>Effective typography</li>
+              <li>Print-ready files</li>
+              <li>Timely delivery</li>
+            </ul>
+            </p>
+            <!-- <a href="#" id="learn-more">Learn more</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-pen-nib fa-flip"></i>
+            <h2>Projects</h2>
+            <p>
+              <ul>
+                <li><b>College Feedback Management System:</b>
+                Developed a web application using Spring Boot, Java, and Angular to collect feedback from students about mentors, teachers, and tutors.</li>
+                <br>
+                <li><b>Fraud Credit Card Detection: </b>
+                Implemented a machine learning model for Fraud Credit Card Detection using Jupyter Notebook, pandas, and Python, showcasing expertise beyond traditional application development.</li>
+              </ul>
+            </p>
+            <!-- <a href="#" id="learn-more">Learn more</a> -->
+          </div> 
+        </div> 
+        <p id="message" style="display: none;">Content coming soon</p>
+      </div>
+    </div>  
+    <!-- ---------------------------certificates---------------------- -->
+    <div class="certificates" id="certificates">
+      <div class="container">
+        <h1 class="sub-title">Certificates</h1>
+        <div class="certificates-list">
+          <div class="row">
+            <div class="col1">
+              <h2>Provider : <span>Google</span></h2>
+              <p>Google Kickstart 2020 coding competition <span>G-Rank : 2560</span></p>
+            </div>
+            <div class="col2">
+              <a href="https://drive.google.com/file/d/1qroFR675qrUJC8M5mg24doyOS7NSx09o/view?usp=sharing" target="_blank">
+                <i class="fa-solid fa-eye fa-beat-fade"></i></a>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col1">
+              <h2>Provider : <span> IIT Kharagpur</span></h2>
+              <p>NPTEL Online Certification Programming in Java</p>
+            </div>
+            <div class="col2">
+              <a href="https://drive.google.com/file/d/1pbKCvmPeGIDYHTiU7LGVSWsUOPZ6ztII/view?usp=sharing" target="_blank"><i class="fa-solid fa-eye fa-beat-fade"></i></a>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col1">
+              <h2>Provider : <span>TCS</span></h2>
+              <p>TCS Codevita season 9 Award certificate for clearing round one.</p>
+            </div>
+            <div class="col2">
+              <a href="https://drive.google.com/file/d/1qem3-0bqhIguAWlGAyx_RP8tIXSlpItn/view?usp=sharing" target="_blank">
+                <i class="fa-solid fa-eye fa-beat-fade"></i></a>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col1">
+              <h2>Provider : <span>Linux Professional Institute</span></h2>
+              <p>Linux Professional Institute - Linux Essentials</p>
+            </div>
+            <div class="col2">
+              <a href="https://drive.google.com/file/d/1c-fuuTB4safIB16ZC0F-GQEVylc9TMQK/view?usp=sharing"><i class="fa-solid fa-eye fa-beat-fade"></i></a>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col1">
+              <h2>Provider : <span>CISCO</span></h2>
+              <p>CISCO - Cyber Security Essentials, Python</p>
+            </div>
+            <div class="col2">
+                <a href="https://drive.google.com/file/d/12rcQwbT4hNH3JJ-ntmrU4_InntgjFqMH/view?usp=sharing" target="_blank">
+                  <i class="fa-solid fa-eye fa-beat-fade"></i></a>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col1">
+              <h2>Provider : <span>Great Learning</span></h2>
+              <p>AWS For Beginners</p>
+            </div>
+            <div class="col2">
+              <a href="https://drive.google.com/file/d/1zkEwwvTaQtpt6yfl8ndnbLTMpFRvQeCM/view?usp=sharing" target="_blank">
+                <i class="fa-solid fa-eye fa-beat-fade"></i></a>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a href="mailto:sheikraffhankhan@gmail.com" target="_blank"><p><i class="fa-solid fa-paper-plane"></i>sheikraffhankhan@gmail.com</p></a>
+            <a href="tel:+919966598750" target="_blank"><p><i class="fa-solid fa-phone fa-shake"></i>9966598750</p></a>
+            <div class="contact-icons">
+              <a href="https://www.linkedin.com/in/raffhan-khan-307568199/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/RaffhanKhan/" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.youtube.com/@u-tubebin8484/about" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/__stick_man___/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/My_Resume_2k24.pdf" class="btn btn3">Download Resume<i class="fa-solid fa-chevron-down fa-bounce"></i></a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="messege" id="messege"  rows="6" placeholder="Your Message"></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy-rights">
+      <p>Copyrights © Raffhan 2021 - 2024. All rights reserved.</p>
+    </div>
+  </body>
+</html>
